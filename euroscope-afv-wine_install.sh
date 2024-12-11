@@ -256,7 +256,7 @@ if [ $installEuroScope == 1 ]; then
   winetricks --unattended urlmon
   #winetricks --unattended vcrun2010
   #winetricks --unattended vcrun2017
-  winetricks --unattended vcrun2019
+  winetricks --unattended vcrun2022
   winetricks --unattended wininet
 
   printf "%bDownloading EuroScope…\n%b" "$fStatus" "$fEnd"
