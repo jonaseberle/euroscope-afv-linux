@@ -219,7 +219,7 @@ printf "%bShutting down other wine processes…\n%b" "$fStatus" "$fEnd"
 wineserver --kill || true
 
 # This env seems to circumvent the "Mono is missing" prompt
-#WINEDLLOVERRIDES="mscoree=" 
+#WINEDLLOVERRIDES="mscoree="
 wine wineboot --init
 wine winecfg -v win7
 "$wineBin" winecfg -v
@@ -274,7 +274,7 @@ if [ $installEuroScope == 1 ]; then
   printf "%bDownloading EuroScope…\n%b" "$fStatus" "$fEnd"
   esFilename="EuroScopeInstaller.msi"
   download "$_esUrl" "$esFilename"
-   
+
   printf "%bInstalling EuroScope…\n%b" "$fSection" "$fEnd"
   wine msiexec /q /l "euroscope-afv-wine_msiexec-es.log" /i "$esFilename"
 
